@@ -58,3 +58,11 @@
 .trip-card__meta { display: flex; gap: 16px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; flex-wrap: wrap; }
 .trip-card__price { font-weight: 700; color: var(--ink); }
 .trip-card__actions { display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; }
+
+/* Tarjetas (pasos, confianza) */
+.card { border: 1px solid var(--line); border-radius: var(--radius-md); padding: 28px; display: flex; flex-direction: column; gap: 12px; background: var(--surface); }
+.section--surface .card { background: var(--white); }
+.card__icon { width: 48px; height: 48px; border-radius: var(--radius-sm); background: var(--primary); color: var(--white); display: flex; align-items: center; justify-content: center; }
+.card__icon--secondary { background: var(--secondary); }
+.card__title { font-weight: 700; font-size: 22px; line-height: 28px; }
+.card__text { color: var(--muted); }
