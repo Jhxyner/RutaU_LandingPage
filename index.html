@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es-419">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">RutaU – Carpooling universitario para estudiantes de Lima</title>
+  <meta name="description" content="Comparte el viaje a tu universidad con compañeros verificados con correo .edu.pe. Reparte el gasto y llega a clases sin depender de la hora punta.">
+  <meta name="theme-color" content="#0E7490">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true" focusable="false">
+  <symbol id="i-logo" viewBox="0 0 40 40"><path d="M12 13v10a8 8 0 0 0 16 0V13" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="0.1 7"/><circle cx="12" cy="9" r="4" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="28" cy="9" r="4.5" fill="currentColor"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></symbol>
+  <symbol id="i-profile" viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></symbol>
+  <symbol id="i-school" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M14.4 6 14 4H5v17h2v-7h5.6l.4 2h7V6z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></symbol>
+</svg>
+
+  <a class="skip-link" href="#contenido" data-i18n="a11y.skip">Saltar al contenido principal</a>
+  <p id="lang-live" class="sr-only" role="status" aria-live="polite"></p>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#" data-i18n-attr="aria-label:a11y.logo" aria-label="RutaU, ir al inicio">
+        <svg class="icon" width="40" height="40" style="width:40px;height:40px" aria-hidden="true"><use href="#i-logo"/></svg>
+        <span class="brand__name">RutaU</span>
+      </a>
+      <nav id="main-nav" class="main-nav" data-i18n-attr="aria-label:a11y.nav" aria-label="Navegación principal">
+        <a href="#como" data-i18n="nav.how">Cómo funciona</a>
+        <a href="#beneficios" data-i18n="nav.benefits">Beneficios</a>
+        <a href="#seguridad" data-i18n="nav.security">Seguridad</a>
+        <a href="#faq" data-i18n="nav.faq">Preguntas</a>
+        <a class="nav-extra" href="#" data-app="login" data-i18n="nav.login">Iniciar sesión</a>
+        <a class="nav-extra" href="#" data-app="register" data-i18n="nav.signup">Crear cuenta</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" data-i18n-attr="aria-label:a11y.lang" aria-label="Seleccionar idioma">
+          <button type="button" data-lang="es_419" aria-pressed="true" lang="es">ES</button>
+          <span class="lang-switch__sep" aria-hidden="true">|</span>
+          <button type="button" data-lang="en_US" aria-pressed="false" lang="en">EN</button>
+        </div>
+        <a class="header-login" href="#" data-app="login" data-i18n="nav.login">Iniciar sesión</a>
+        <a class="btn btn--light btn--sm header-signup" href="#" data-app="register" data-i18n="nav.signup">Crear cuenta</a>
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-i18n-attr="aria-label:a11y.menu" aria-label="Abrir menú">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <span class="badge badge--secondary" data-i18n="hero.badge">Solo para estudiantes verificados con correo .edu.pe</span>
+          <h1 id="hero-title" class="hero__title" data-i18n="hero.title">Comparte el viaje a tu universidad</h1>
+          <p class="hero__lead" data-i18n="hero.lead">Encuentra compañeros que salen de tu zona al mismo horario, reparte el gasto del auto y llega a clases sin depender de la hora punta.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#" data-app="search" data-i18n="hero.cta.search">Buscar un viaje</a>
+            <a class="btn btn--outline" href="#" data-app="publish" data-i18n="hero.cta.publish">Publicar mi viaje</a>
+          </div>
+          <ul class="check-list">
+            <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.check1">Perfiles con calificación</span></li>
+            <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.check2">Gasto compartido</span></li>
+            <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.check3">Reportes y moderación</span></li>
+          </ul>
+        </div>
+        <div class="hero__visual">
+          <article class="trip-card" data-i18n-attr="aria-label:card.aria" aria-label="Ejemplo de viaje publicado">
+            <div class="trip-card__driver">
+              <span class="avatar" aria-hidden="true">ML</span>
+              <div class="trip-card__who">
+                <div class="trip-card__name">María López</div>
+                <div class="trip-card__rating"><svg class="icon icon--sm icon--star" aria-hidden="true"><use href="#i-star"/></svg><span data-i18n="card.rating">4.8 · Estudiante UPC</span></div>
+              </div>
+              <span class="badge badge--primary" data-i18n="card.role">Conductor</span>
+            </div>
+            <div class="route">
+              <div class="route__line" aria-hidden="true"><span class="route__start"></span><span class="route__path"></span><span class="route__end"></span></div>
+              <div class="route__stops">
+                <div><div class="route__place" data-i18n="card.from">Av. Primavera 1200, Surco</div><div class="route__time" data-i18n="card.depart">Salida · 07:00</div></div>
+                <div><div class="route__place" data-i18n="card.to">UPC Campus Monterrico</div><div class="route__time" data-i18n="card.arrive">Llegada · 07:40</div></div>
+              </div>
+            </div>
+            <div class="trip-card__meta"><span data-i18n="card.day">Lun 07:00</span><span data-i18n="card.seats">2 asientos</span><span class="trip-card__price">S/ 5.00</span></div>
+            <div class="trip-card__actions">
+              <a class="btn btn--text" href="#" data-app="search" data-i18n="card.detail">Ver detalle</a>
+              <a class="btn btn--primary btn--sm" href="#" data-app="search" data-i18n="card.request">Solicitar asiento</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="como" class="section section--white" aria-labelledby="como-title">
+      <div class="container">
+        <div class="section__head"><h2 id="como-title" class="section__title" data-i18n="how.title">Así funciona el viaje, de A a B</h2><p class="section__lead" data-i18n="how.lead">Tres pasos, los mismos para quien maneja y para quien se sube.</p></div>
+        <ol class="steps" style="list-style:none">
+          <li class="card"><span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></span><h3 class="card__title" data-i18n="how.s1.t">Busca tu ruta</h3><p class="card__text" data-i18n="how.s1.d">Indica tu zona, destino y horario. Si no hay un viaje exacto, te mostramos salidas cercanas con ±15 minutos.</p></li>
+          <li class="card"><span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-profile"/></svg></span><h3 class="card__title" data-i18n="how.s2.t">Revisa y solicita</h3><p class="card__text" data-i18n="how.s2.d">Mira el perfil del conductor, sus calificaciones y el punto de recojo. El conductor acepta o rechaza tu solicitud.</p></li>
+          <li class="card"><span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span><h3 class="card__title" data-i18n="how.s3.t">Viaja y califica</h3><p class="card__text" data-i18n="how.s3.d">Al terminar, ambos se califican. Esa reputación ayuda a que la próxima persona decida con confianza.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="beneficios" class="section section--surface" aria-labelledby="ben-title">
+      <div class="container">
+        <div class="section__head"><h2 id="ben-title" class="section__title" data-i18n="ben.title">Una cuenta, dos formas de aprovechar RutaU</h2></div>
+        <div class="audience">
+          <article class="panel panel--driver">
+            <p class="panel__kicker" data-i18n="ben.driver.k">Si manejas</p>
+            <h3 class="panel__title" data-i18n="ben.driver.t">Tu auto ya hace el viaje. Reparte el gasto.</h3>
+            <ul class="panel__list">
+              <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ben.driver.1">Publica tu ruta con paradas intermedias.</span></li>
+              <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ben.driver.2">Fija tu precio por asiento, limitado a la capacidad de tu vehículo.</span></li>
+              <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ben.driver.3">Acepta solo a quien tenga buena reputación.</span></li>
+            </ul>
+            <a class="btn btn--outline" href="#" data-app="publish" data-i18n="hero.cta.publish">Publicar mi viaje</a>
+          </article>
+          <article class="panel panel--rider">
+            <p class="panel__kicker" data-i18n="ben.rider.k">Si te subes</p>
+            <h3 class="panel__title" data-i18n="ben.rider.t">Llega a tiempo, sin cambiar tres veces de bus.</h3>
+            <ul class="panel__list">
+              <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ben.rider.1">Busca por zona, precio y horario.</span></li>
+              <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ben.rider.2">Elige dónde te recogen en la ruta.</span></li>
+              <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="ben.rider.3">Paga una tarifa compartida y conocida de antemano.</span></li>
+            </ul>
+            <a class="btn btn--primary" href="#" data-app="search" data-i18n="hero.cta.search">Buscar un viaje</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="seguridad" class="section section--white" aria-labelledby="sec-title">
+      <div class="container">
+        <div class="section__head"><h2 id="sec-title" class="section__title" data-i18n="sec.title">Viajar con desconocidos exige confianza</h2><p class="section__lead" data-i18n="sec.lead">Lo que más pidieron los estudiantes que entrevistamos está resuelto desde el primer día.</p></div>
+        <ul class="trust">
+          <li class="card"><span class="card__icon card__icon--secondary"><svg class="icon" aria-hidden="true"><use href="#i-school"/></svg></span><h3 class="card__title" data-i18n="sec.c1.t">Solo estudiantes</h3><p class="card__text" data-i18n="sec.c1.d">Registro con correo institucional .edu.pe.</p></li>
+          <li class="card"><span class="card__icon card__icon--secondary"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span><h3 class="card__title" data-i18n="sec.c2.t">Calificaciones reales</h3><p class="card__text" data-i18n="sec.c2.d">Solo califican quienes compartieron un viaje realizado.</p></li>
+          <li class="card"><span class="card__icon card__icon--secondary"><svg class="icon" aria-hidden="true"><use href="#i-flag"/></svg></span><h3 class="card__title" data-i18n="sec.c3.t">Reportes y moderación</h3><p class="card__text" data-i18n="sec.c3.d">Un equipo revisa cada reporte y puede suspender cuentas.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--surface" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section__head"><h2 id="faq-title" class="section__title" data-i18n="faq.title">Preguntas frecuentes</h2></div>
+        <div class="faq-list">
+                    <div class="faq-item">
+            <h3><button class="faq-q" type="button" id="faq-q1" aria-expanded="true" aria-controls="faq-a1"><span data-i18n="faq.q1">¿Quién puede usar RutaU?</span><span class="faq-sign" aria-hidden="true">–</span></button></h3>
+            <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1"><p data-i18n="faq.a1">Estudiantes universitarios con correo institucional .edu.pe. Un mismo perfil puede ser conductor y pasajero.</p></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" id="faq-q2" aria-expanded="false" aria-controls="faq-a2"><span data-i18n="faq.q2">¿Cómo se define el precio de un viaje?</span><span class="faq-sign" aria-hidden="true">+</span></button></h3>
+            <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden><p data-i18n="faq.a2">Lo fija el conductor al publicar el viaje, por asiento, y lo ves antes de solicitar. El objetivo es repartir el gasto, no generar ganancias.</p></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" id="faq-q3" aria-expanded="false" aria-controls="faq-a3"><span data-i18n="faq.q3">¿Qué pasa si un conductor cancela un viaje confirmado?</span><span class="faq-sign" aria-hidden="true">+</span></button></h3>
+            <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden><p data-i18n="faq.a3">Los pasajeros reciben una notificación y el viaje deja de aparecer en las búsquedas. Puedes buscar otra salida cercana en el mismo horario.</p></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-final" aria-labelledby="cta-title">
+      <div class="container cta-final__inner">
+        <h2 id="cta-title" class="cta-final__title" data-i18n="cta.title">¿Listo para tu próximo viaje?</h2>
+        <p class="cta-final__lead" data-i18n="cta.lead">Crea tu cuenta con tu correo universitario en menos de un minuto.</p>
+        <a class="btn btn--light" href="#" data-app="register" data-i18n="cta.btn">Crear mi cuenta</a>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a class="brand" href="index.html"><svg class="icon" style="width:36px;height:36px" aria-hidden="true"><use href="#i-logo"/></svg><span class="brand__name">RutaU</span></a>
+          <p data-i18n="foot.tag">Carpooling universitario para estudiantes de Lima.</p>
+        </div>
+        <nav class="footer-col" data-i18n-attr="aria-label:foot.product" aria-label="Producto">
+          <h3 data-i18n="foot.product">Producto</h3>
+          <ul>
+            <li><a href="#" data-app="search" data-i18n="foot.search">Buscar viajes</a></li>
+            <li><a href="#" data-app="publish" data-i18n="foot.publish">Publicar viaje</a></li>
+            <li><a href="index.html#como" data-i18n="foot.how">Cómo funciona</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" data-i18n-attr="aria-label:foot.legal" aria-label="Legal">
+          <h3 data-i18n="foot.legal">Legal</h3>
+          <ul>
+            <li><a href="terminos.html" data-i18n="foot.terms">Términos de Servicio</a></li>
+            <li><a href="terminos.html#privacidad" data-i18n="foot.privacy">Política de privacidad</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h3 data-i18n="foot.lang">Idioma</h3>
+          <div class="lang-switch" role="group" data-i18n-attr="aria-label:a11y.lang" aria-label="Seleccionar idioma">
+            <button type="button" data-lang="es_419" aria-pressed="true" lang="es">Español</button>
+            <span class="lang-switch__sep" aria-hidden="true">|</span>
+            <button type="button" data-lang="en_US" aria-pressed="false" lang="en">English</button>
+          </div>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2026</span> RutaU · <span data-i18n="foot.copy">Grupo 5 · Ingeniería de Software, UPC</span></p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="i18n/es_419.js"></script>
+  <script src="i18n/en_US.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/faq.js"></script>
+</body>
+</html>
