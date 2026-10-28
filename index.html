@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true" focusable="false">
@@ -184,8 +185,46 @@
     </section>
   </main>
 
+    <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a class="brand" href="index.html"><svg class="icon" style="width:36px;height:36px" aria-hidden="true"><use href="#i-logo"/></svg><span class="brand__name">RutaU</span></a>
+          <p data-i18n="foot.tag">Carpooling universitario para estudiantes de Lima.</p>
+        </div>
+        <nav class="footer-col" data-i18n-attr="aria-label:foot.product" aria-label="Producto">
+          <h3 data-i18n="foot.product">Producto</h3>
+          <ul>
+            <li><a href="#" data-app="search" data-i18n="foot.search">Buscar viajes</a></li>
+            <li><a href="#" data-app="publish" data-i18n="foot.publish">Publicar viaje</a></li>
+            <li><a href="index.html#como" data-i18n="foot.how">Cómo funciona</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" data-i18n-attr="aria-label:foot.legal" aria-label="Legal">
+          <h3 data-i18n="foot.legal">Legal</h3>
+          <ul>
+            <li><a href="terminos.html" data-i18n="foot.terms">Términos de Servicio</a></li>
+            <li><a href="terminos.html#privacidad" data-i18n="foot.privacy">Política de privacidad</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h3 data-i18n="foot.lang">Idioma</h3>
+          <div class="lang-switch" role="group" data-i18n-attr="aria-label:a11y.lang" aria-label="Seleccionar idioma">
+            <button type="button" data-lang="es_419" aria-pressed="true" lang="es">Español</button>
+            <span class="lang-switch__sep" aria-hidden="true">|</span>
+            <button type="button" data-lang="en_US" aria-pressed="false" lang="en">English</button>
+          </div>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span data-year>2026</span> RutaU · <span data-i18n="foot.copy">Grupo 5 · Ingeniería de Software, UPC</span></p>
+    </div>
+  </footer>
 
   <script src="js/config.js"></script>
+  <script src="i18n/es_419.js"></script>
+  <script src="i18n/en_US.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/faq.js"></script>
 </body>

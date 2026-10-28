@@ -1,0 +1,30 @@
+/* Adaptación a tablet y móvil */
+@media (max-width: 960px) {
+  .main-nav { display: none; }
+  .menu-toggle { display: inline-flex; }
+  .main-nav.is-open {
+    display: flex; flex-direction: column; gap: 0; position: absolute; left: 0; right: 0; top: var(--header-h);
+    margin: 0; padding: 8px var(--gutter) 16px; background: var(--primary-dark);
+  }
+  .main-nav.is-open a { padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.2); font-size: 16px; }
+  .steps, .trust { grid-template-columns: 1fr; }
+  .audience { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 720px) {
+  .section { padding: 56px 0; }
+  .section__title, .cta-final__title, .legal h1 { font-size: 30px; line-height: 36px; }
+  .hero__inner { padding-top: 40px; padding-bottom: 48px; gap: 36px; }
+  .hero__title { font-size: 40px; line-height: 44px; letter-spacing: -1px; }
+  .hero__lead { font-size: 18px; line-height: 28px; }
+  .hero__actions .btn { flex: 1 1 100%; }
+  .header-actions { gap: 8px; }
+  .header-login { display: none; }
+  .header-signup { display: none; }
+  .panel { padding: 24px; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+/* Enlaces de sesión dentro del menú móvil */
+.nav-extra { display: none; }
+@media (max-width: 720px) { .main-nav.is-open .nav-extra { display: block; } }
