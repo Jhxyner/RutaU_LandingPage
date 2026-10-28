@@ -1,0 +1,55 @@
+/* ==========================================================================
+   RutaU – Variables de diseño (Style Guide v2)
+   Toda la paleta y tipografía vive aquí. No se usan colores sueltos en otros
+   archivos CSS: siempre var(--token).
+   ========================================================================== */
+:root {
+  /* Pacífico – color principal */
+  --primary: #0E7490;
+  --primary-dark: #0B5C73;
+  --primary-container: #D5F1F8;
+
+  /* Atardecer – color secundario */
+  --secondary: #C2410C;
+  --secondary-dark: #9A3412;
+  --secondary-container: #FFE7DA;
+
+  /* Sol – solo estrellas / reputación */
+  --sun: #F59E0B;
+  --sun-text: #92400E;
+  --sun-container: #FEF0CC;
+
+  /* Neutros */
+  --ink: #10272E;
+  --muted: #4A5F67;
+  --line: #D5DEE2;
+  --surface: #F6F8F9;
+  --white: #FFFFFF;
+
+  /* Estados */
+  --success: #15803D;
+  --success-dark: #166534;
+  --success-container: #DCF5E3;
+  --error: #B3261E;
+  --error-container: #FBE3E1;
+
+  /* Tipografía */
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Forma y elevación */
+  --radius-pill: 999px;
+  --radius-lg: 24px;
+  --radius-md: 20px;
+  --radius-sm: 14px;
+  --shadow-card: 0 18px 40px rgba(11, 63, 79, 0.14);
+
+  /* Layout */
+  --container: 1200px;
+  --gutter: 40px;
+  --header-h: 72px;
+}
+
+@media (max-width: 720px) {
+  :root { --gutter: 20px; --header-h: 64px; }
+}
