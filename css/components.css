@@ -1,0 +1,28 @@
+/* Componentes reutilizables */
+
+/* Botones */
+.btn {
+  min-height: 52px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 0 30px; border-radius: var(--radius-pill); border: 2px solid transparent;
+  font-family: var(--font-heading); font-weight: 700; font-size: 16px; text-decoration: none; cursor: pointer;
+  transition: background-color .15s, color .15s, border-color .15s;
+}
+.btn--primary { background: var(--primary); color: var(--white); }
+.btn--primary:hover { background: var(--primary-dark); }
+.btn--outline { border-color: var(--secondary); color: var(--secondary); background: transparent; }
+.btn--outline:hover { background: var(--secondary-container); color: var(--secondary-dark); }
+.btn--light { background: var(--white); color: var(--primary-dark); }
+.btn--light:hover { background: var(--primary-container); }
+.btn--sm { min-height: 44px; padding: 0 22px; font-size: 15px; }
+.btn--text { min-height: 44px; padding: 0 12px; color: var(--secondary); }
+.btn--text:hover { text-decoration: underline; }
+
+/* Selector de idioma */
+.lang-switch { display: inline-flex; align-items: center; gap: 2px; font-size: 14px; font-weight: 700; }
+.lang-switch button {
+  min-width: 36px; min-height: 36px; border: 0; background: transparent; color: var(--white);
+  opacity: .75; border-radius: var(--radius-pill); font-weight: 700;
+}
+.lang-switch button[aria-pressed="true"] { opacity: 1; background: rgba(255,255,255,.2); }
+.lang-switch button:hover { opacity: 1; }
+.lang-switch__sep { opacity: .6; }
