@@ -91,3 +91,14 @@
 .faq-q .faq-sign { font-size: 24px; line-height: 1; color: var(--primary); flex: none; width: 24px; text-align: center; }
 .faq-a { padding: 0 20px 18px; color: var(--muted); }
 .faq-a[hidden] { display: none; }
+
+/* Páginas legales */
+.legal { background: var(--white); }
+.legal__inner { max-width: 820px; padding-top: 56px; padding-bottom: 72px; display: flex; flex-direction: column; gap: 28px; }
+.legal h1 { font-weight: 800; font-size: 40px; line-height: 46px; letter-spacing: -0.8px; }
+.legal h2 { font-weight: 700; font-size: 24px; line-height: 30px; margin-bottom: 8px; }
+.legal p, .legal li { color: var(--muted); }
+.legal ul { list-style: disc; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; }
+.legal__meta { color: var(--muted); font-size: 14px; }
+.back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary-dark); font-weight: 700; text-decoration: none; padding: 8px 0; }
+.back-link:hover { text-decoration: underline; }
