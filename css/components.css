@@ -26,3 +26,35 @@
 .lang-switch button[aria-pressed="true"] { opacity: 1; background: rgba(255,255,255,.2); }
 .lang-switch button:hover { opacity: 1; }
 .lang-switch__sep { opacity: .6; }
+
+/* Insignias */
+.badge { align-self: flex-start; padding: 6px 14px; border-radius: var(--radius-pill); font-weight: 700; font-size: 14px; }
+.badge--secondary { background: var(--secondary-container); color: var(--secondary-dark); }
+.badge--primary { background: var(--primary-container); color: var(--primary-dark); font-weight: 600; font-size: 12px; padding: 4px 10px; }
+
+.check-list { display: flex; flex-wrap: wrap; gap: 12px 28px; color: var(--muted); font-size: 15px; }
+.check-list li { display: flex; align-items: center; gap: 8px; }
+.check-list .icon { color: var(--success); }
+
+/* Tarjeta de viaje (hero) */
+.trip-card {
+  width: 400px; max-width: 100%; background: var(--white); border: 1px solid var(--line);
+  border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; gap: 18px;
+  box-shadow: var(--shadow-card);
+}
+.trip-card__driver { display: flex; align-items: center; gap: 12px; }
+.avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--primary-container); color: var(--primary-dark); display: flex; align-items: center; justify-content: center; font-weight: 700; flex: none; }
+.trip-card__who { flex: 1; }
+.trip-card__name { font-weight: 700; line-height: 20px; }
+.trip-card__rating { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 4px; }
+.route { display: flex; gap: 14px; }
+.route__line { display: flex; flex-direction: column; align-items: center; padding-top: 4px; }
+.route__start { width: 14px; height: 14px; border-radius: 50%; border: 3px solid var(--primary); background: var(--white); }
+.route__path { width: 0; height: 30px; border-left: 3px dotted var(--primary); }
+.route__end { width: 14px; height: 14px; border-radius: 50%; background: var(--secondary); }
+.route__stops { display: flex; flex-direction: column; gap: 14px; }
+.route__place { font-weight: 700; line-height: 20px; }
+.route__time { font-size: 13px; color: var(--muted); }
+.trip-card__meta { display: flex; gap: 16px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; flex-wrap: wrap; }
+.trip-card__price { font-weight: 700; color: var(--ink); }
+.trip-card__actions { display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; }

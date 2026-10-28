@@ -61,6 +61,48 @@
   </header>
 
   <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <span class="badge badge--secondary" data-i18n="hero.badge">Solo para estudiantes verificados con correo .edu.pe</span>
+          <h1 id="hero-title" class="hero__title" data-i18n="hero.title">Comparte el viaje a tu universidad</h1>
+          <p class="hero__lead" data-i18n="hero.lead">Encuentra compañeros que salen de tu zona al mismo horario, reparte el gasto del auto y llega a clases sin depender de la hora punta.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#" data-app="search" data-i18n="hero.cta.search">Buscar un viaje</a>
+            <a class="btn btn--outline" href="#" data-app="publish" data-i18n="hero.cta.publish">Publicar mi viaje</a>
+          </div>
+          <ul class="check-list">
+            <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.check1">Perfiles con calificación</span></li>
+            <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.check2">Gasto compartido</span></li>
+            <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="hero.check3">Reportes y moderación</span></li>
+          </ul>
+        </div>
+        <div class="hero__visual">
+          <article class="trip-card" data-i18n-attr="aria-label:card.aria" aria-label="Ejemplo de viaje publicado">
+            <div class="trip-card__driver">
+              <span class="avatar" aria-hidden="true">ML</span>
+              <div class="trip-card__who">
+                <div class="trip-card__name">María López</div>
+                <div class="trip-card__rating"><svg class="icon icon--sm icon--star" aria-hidden="true"><use href="#i-star"/></svg><span data-i18n="card.rating">4.8 · Estudiante UPC</span></div>
+              </div>
+              <span class="badge badge--primary" data-i18n="card.role">Conductor</span>
+            </div>
+            <div class="route">
+              <div class="route__line" aria-hidden="true"><span class="route__start"></span><span class="route__path"></span><span class="route__end"></span></div>
+              <div class="route__stops">
+                <div><div class="route__place" data-i18n="card.from">Av. Primavera 1200, Surco</div><div class="route__time" data-i18n="card.depart">Salida · 07:00</div></div>
+                <div><div class="route__place" data-i18n="card.to">UPC Campus Monterrico</div><div class="route__time" data-i18n="card.arrive">Llegada · 07:40</div></div>
+              </div>
+            </div>
+            <div class="trip-card__meta"><span data-i18n="card.day">Lun 07:00</span><span data-i18n="card.seats">2 asientos</span><span class="trip-card__price">S/ 5.00</span></div>
+            <div class="trip-card__actions">
+              <a class="btn btn--text" href="#" data-app="search" data-i18n="card.detail">Ver detalle</a>
+              <a class="btn btn--primary btn--sm" href="#" data-app="search" data-i18n="card.request">Solicitar asiento</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
 
