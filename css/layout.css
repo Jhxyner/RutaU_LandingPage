@@ -41,3 +41,14 @@
 .cta-final__inner { padding-top: 72px; padding-bottom: 72px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; }
 .cta-final__title { font-weight: 800; font-size: 40px; line-height: 46px; letter-spacing: -0.8px; text-wrap: balance; }
 .cta-final__lead { font-size: 18px; line-height: 28px; max-width: 560px; opacity: .95; }
+
+/* Footer */
+.site-footer { background: var(--ink); color: var(--white); }
+.site-footer__inner { padding-top: 56px; padding-bottom: 32px; display: flex; flex-direction: column; gap: 40px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+.footer-col h3 { font-size: 14px; letter-spacing: .6px; text-transform: uppercase; margin-bottom: 14px; opacity: .8; }
+.footer-col li + li { margin-top: 4px; }
+.footer-col a, .footer-link { color: var(--white); text-decoration: none; display: inline-block; padding: 6px 0; }
+.footer-col a:hover { text-decoration: underline; }
+.footer-brand p { margin-top: 12px; opacity: .85; max-width: 280px; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.18); padding-top: 24px; font-size: 14px; opacity: .85; }
