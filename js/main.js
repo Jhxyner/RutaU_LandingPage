@@ -1,7 +1,7 @@
 /* Punto de entrada: enlaza los CTA con la Web App y fija el año */
 document.addEventListener('DOMContentLoaded', function () {
   var base = (window.RUTAU_CONFIG && window.RUTAU_CONFIG.APP_URL) || '#';
-  var routes = { login: '/login', register: '/register', search: '/trips', publish: '/trips/new' };
+  var routes = { login: '/login', register: '/register', search: '/pasajero/viajes', publish: '/conductor/publicar' };
   document.querySelectorAll('[data-app]').forEach(function (a) {
     var r = routes[a.getAttribute('data-app')] || '';
     a.setAttribute('href', base === '#' ? '#' : base.replace(/\/$/, '') + r);
